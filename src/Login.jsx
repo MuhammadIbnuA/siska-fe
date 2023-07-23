@@ -13,7 +13,7 @@ function Login() {
 
     axios.post('https://siska-be.vercel.app/login', { email, password })
       .then(() => {
-        navigate("/");
+        navigate("/users");
       })
       .catch((err) => console.log(err));
   };
