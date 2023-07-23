@@ -13,7 +13,7 @@ function Signup() {
     e.preventDefault();
     axios.post('https://siska-be.vercel.app/register', { name, email, password })
       .then((res) => {
-        navigate("/login");
+        navigate("/");
       })
       .catch(err => console.log(err));
   };
