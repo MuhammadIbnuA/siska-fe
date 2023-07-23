@@ -26,7 +26,7 @@ function UpdateUser() {
       .put(`https://siska-be.vercel.app/update/${id}`, { name, email, age })
       .then((result) => {
         console.log(result);
-        navigate("/");
+        navigate("/users");
       })
       .catch((err) => console.log(err));
   };
